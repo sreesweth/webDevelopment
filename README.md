@@ -8,3 +8,6 @@ Checkin
 Stage
 Commit
 push
+
+
+property: value

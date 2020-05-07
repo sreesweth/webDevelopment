@@ -1,171 +1,240 @@
-<html>  
-    <head>
-        <!-- Meta data -->
-        <title>My First Html</title>
-        <style>
-           table, td{
-            border: 1px solid black;
-           }
-        </style>
-    </head>
-    <body style="background-color: aqua;">
-        <h1 name="h1-tag" id="h1Tag" class="someClass" style="text-align: center;" >
-            This is my First Page 1
-        </h1>
-        <h2>This is my First Page 2</h2>
-        <h3>This is my First Page 3</h3>
-        <h4><i>This is my First Page 4</i></h4>
-        <h5>This is my First Page 5</h5>
-        <h6>This is my First Page 6</h6>
+<html>
 
-        <img style="display: block; text-align: center;" src="./assets/images/jpgs/getRich.jpg">
-      
-        <input type="text">
-        <input  type="text">
-        <input  type="text">
-        <input type="text">
-        <input type="text">
-        <input type="button" value="Submit"/>
-        <hr>
-        <pre>
+<head>
+    <!-- Meta data -->
+    <title>My First Html</title>
+    
+    <link rel="stylesheet" href="./assets/css/bootstrap.css"></link>
+    
+</head>
+<!-- Inline Styling-->
+
+<body class="container">
+    <h1 id="page-heading">
+        This is my First Page 1
+    </h1>
+    <h2>This is my First Page 2</h2>
+    <h3>This is my First Page 3</h3>
+    <h4><i>This is my First Page 4</i></h4>
+    <h5>This is my First Page 5</h5>
+    <h6 id="page-heading">This is my First Page 6</h6>
+
+    <img style="display: block; text-align: center;" src="./assets/images/jpgs/getRich.jpg">
+
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="button" value="left" class="btn btn-primary btn-sm"/>
+    <input type="button" value="Right" class="btn btn-danger btn-sm"/>
+    <hr>
+    <pre>
            1. HTML - Tags
            2. Open,  Closed
            3. Block or inline
                 a. Block Level: div, all h tags, p tag, ul, li ol, table
                 b. Inline Tags: b, a, img, input, i, span.
         </pre>
-        <p>
-            Lorem ipsum dolor sit amet, 
-            <b>consectetur adipiscing elit,</b> <!--Inline Tag-->
-            <!-- <h5>consectetur adipiscing elit,</h5>  --> <!--Block level Tag-->
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Amet luctus venenatis lectus magna. 
-            Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Tincidunt nunc pulvinar sapien et ligula. Non quam lacus suspendisse faucibus interdum posuere. Purus sit amet volutpat consequat mauris. Orci dapibus ultrices in iaculis nunc sed augue lacus. Egestas congue quisque egestas diam in arcu cursus euismod. Sed id semper risus in hendrerit. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Lectus proin nibh nisl condimentum id venenatis a condimentum vitae. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Aliquam sem fringilla ut morbi tincidunt augue interdum velit. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. In ornare quam viverra orci sagittis eu volutpat odio facilisis.
-        </p>
-        <!-- <p>
-            A pellentesque sit amet porttitor eget dolor. Urna molestie at elementum eu facilisis sed. Nunc congue nisi vitae suscipit tellus mauris a diam. Mi bibendum neque egestas congue quisque egestas. Egestas purus viverra accumsan in nisl nisi. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Vitae suscipit tellus mauris a. At consectetur lorem donec massa sapien faucibus et molestie. Ultrices vitae auctor eu augue. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Placerat duis ultricies lacus sed turpis tincidunt. Cursus eget nunc scelerisque viverra mauris in aliquam. Eu mi bibendum neque egestas. Sed lectus vestibulum mattis ullamcorper velit sed. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Nulla pharetra diam sit amet nisl. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Bibendum neque egestas congue quisque.
-        </p>
-        <div>
-            <h3>This is inside div: </h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            
-            
-            Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Amet luctus venenatis lectus magna. 
-            
-            
-            Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Tincidunt nunc pulvinar sapien et ligula. Non quam lacus suspendisse faucibus interdum posuere. Purus sit amet volutpat consequat mauris. Orci dapibus ultrices in iaculis nunc sed augue lacus. Egestas congue quisque egestas diam in arcu cursus euismod. Sed id semper risus in hendrerit. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Lectus proin nibh nisl condimentum id venenatis a condimentum vitae. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Aliquam sem fringilla ut morbi tincidunt augue interdum velit. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. In ornare quam viverra orci sagittis eu volutpat odio facilisis.
-        </div> -->
-        <ol style="list-style-type: none">
-            <li>
-                Apples
-                <ol>
-                    <li>
-                        Gala Apples
-                    </li>
-                    <li>
-                        Red Apples
-                        <ol>
-                            <li>Sample 1</li>
-                            <li>Sample 2</li>
-                            <li>Sample 3</li>
-                            <li>Sample 4</li>
-                        </ol>
-                    </li>
-                    <li>
-                        Pink Apples
-                    </li>
-                    <li>
-                        Green Apples
-                    </li>
-                    <li>
-                        Golden Apples
-                    </li>
-                </ol>
-            </li>
-            <li>
-                Grapes
-            </li>
-            <li>
-                Mangos
-            </li>
-            <li>
-                Oranges
-            </li>
-            <li>
-                Bananas
-            </li>
-            <li>
-                Pineapple
-            </li>
-        </ol>
+    <p class="red green">
+        Lorem ipsum dolor sit amet,
+        <b class="green">consectetur adipiscing elit,</b>
+        <!--Inline Tag-->
+        <!-- <h5>consectetur adipiscing elit,</h5>  -->
+        <!--Block level Tag-->
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Amet luctus venenatis lectus magna.
+        Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Tincidunt nunc pulvinar sapien et ligula.
+        Non quam lacus suspendisse faucibus interdum posuere. Purus sit amet volutpat consequat mauris. Orci dapibus
+        ultrices in iaculis nunc sed augue lacus. Egestas congue quisque egestas diam in arcu cursus euismod. Sed id
+        semper risus in hendrerit. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Lectus proin nibh nisl
+        condimentum id venenatis a condimentum vitae. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Aliquam
+        sem fringilla ut morbi tincidunt augue interdum velit. Nullam eget felis eget nunc lobortis mattis aliquam
+        faucibus purus. In ornare quam viverra orci sagittis eu volutpat odio facilisis.
+    </p>
+    <p class="gray">
+        A pellentesque sit amet porttitor eget dolor. Urna molestie at elementum eu facilisis sed. Nunc congue nisi
+        vitae suscipit tellus mauris a diam. Mi bibendum neque egestas congue quisque egestas. Egestas purus viverra
+        accumsan in nisl nisi. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Vitae
+        suscipit tellus mauris a. At consectetur lorem donec massa sapien faucibus et molestie. Ultrices vitae auctor eu
+        augue. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Placerat duis ultricies lacus sed
+        turpis tincidunt. Cursus eget nunc scelerisque viverra mauris in aliquam. Eu mi bibendum neque egestas. Sed
+        lectus vestibulum mattis ullamcorper velit sed. Ipsum nunc aliquet bibendum enim facilisis gravida neque
+        convallis. Nulla pharetra diam sit amet nisl. Dis parturient montes nascetur ridiculus mus mauris vitae
+        ultricies. Bibendum neque egestas congue quisque.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet,
+        <b class="green">consectetur adipiscing elit,</b>
+        <!--Inline Tag-->
+        <!-- <h5>consectetur adipiscing elit,</h5>  -->
+        <!--Block level Tag-->
+        <span>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Amet luctus venenatis lectus magna.
+        Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Tincidunt nunc pulvinar sapien et ligula.
+        Non quam lacus suspendisse faucibus interdum posuere. Purus sit amet volutpat consequat mauris. Orci dapibus
+        ultrices in iaculis nunc sed augue lacus. 
+            <b  class="green">Egestas congue quisque egestas diam in arcu cursus euismod.</b> Sed id
+        semper risus in hendrerit. Sollicitudin ac orci phasellus egestas tellus rutrum tellus.
+        </span> 
+        Lectus proin nibh nisl
+        condimentum id venenatis a condimentum vitae. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Aliquam
+        sem fringilla ut morbi tincidunt augue interdum velit. Nullam eget felis eget nunc lobortis mattis aliquam
+        faucibus purus. In ornare quam viverra orci sagittis eu volutpat odio facilisis.
+    </p>
+    <p class="gray">
+        A pellentesque sit amet porttitor eget dolor. Urna molestie at elementum eu facilisis sed. Nunc congue nisi
+        vitae suscipit tellus mauris a diam. Mi bibendum neque egestas congue quisque egestas. Egestas purus viverra
+        accumsan in nisl nisi. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Vitae
+        suscipit tellus mauris a. At consectetur lorem donec massa sapien faucibus et molestie. Ultrices vitae auctor eu
+        augue. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Placerat duis ultricies lacus sed
+        turpis tincidunt. Cursus eget nunc scelerisque viverra mauris in aliquam. Eu mi bibendum neque egestas. Sed
+        lectus vestibulum mattis ullamcorper velit sed. Ipsum nunc aliquet bibendum enim facilisis gravida neque
+        convallis. Nulla pharetra diam sit amet nisl. Dis parturient montes nascetur ridiculus mus mauris vitae
+        ultricies. Bibendum neque egestas congue quisque.
+    </p>
+    <p class="green">
+        Lorem ipsum dolor sit amet,
+        <b>consectetur adipiscing elit,</b>
+        <!--Inline Tag-->
+        <!-- <h5>consectetur adipiscing elit,</h5>  -->
+        <!--Block level Tag-->
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Amet luctus venenatis lectus magna.
+        Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Tincidunt nunc pulvinar sapien et ligula.
+        Non quam lacus suspendisse faucibus interdum posuere. Purus sit amet volutpat consequat mauris. Orci dapibus
+        ultrices in iaculis nunc sed augue lacus. Egestas congue quisque egestas diam in arcu cursus euismod. Sed id
+        semper risus in hendrerit. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Lectus proin nibh nisl
+        condimentum id venenatis a condimentum vitae. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Aliquam
+        sem fringilla ut morbi tincidunt augue interdum velit. Nullam eget felis eget nunc lobortis mattis aliquam
+        faucibus purus. In ornare quam viverra orci sagittis eu volutpat odio facilisis.
+    </p>
+    <p class="gray">
+        A pellentesque sit amet porttitor eget dolor. Urna molestie at elementum eu facilisis sed. Nunc congue nisi
+        vitae suscipit tellus mauris a diam. Mi bibendum neque egestas congue quisque egestas. Egestas purus viverra
+        accumsan in nisl nisi. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Vitae
+        suscipit tellus mauris a. At consectetur lorem donec massa sapien faucibus et molestie. Ultrices vitae auctor eu
+        augue. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Placerat duis ultricies lacus sed
+        turpis tincidunt. Cursus eget nunc scelerisque viverra mauris in aliquam. Eu mi bibendum neque egestas. Sed
+        lectus vestibulum mattis ullamcorper velit sed. Ipsum nunc aliquet bibendum enim facilisis gravida neque
+        convallis. Nulla pharetra diam sit amet nisl. Dis parturient montes nascetur ridiculus mus mauris vitae
+        ultricies. Bibendum neque egestas congue quisque.
+    </p>
 
-        <table>
-            <thead>
-                <tr>
-                    <th style="border: 1px solid black;">Player Name</th>
-                    <th style="border: 1px solid black;">Total Score</th>
-                    <th style="border: 1px solid black;">Run Rate</th>
-                    <th style="border: 1px solid black;">1's</th>
-                    <th style="border: 1px solid black;">2's</th>
-                    <th style="border: 1px solid black;">3's</th>
-                    <th style="border: 1px solid black;">4's</th>
-                    <th style="border: 1px solid black;">6's</th>
-                    <th style="border: 1px solid black;">Dot's</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                       <a href="https://www.espncricinfo.com/india/content/player/34102.html" target="_blank">Rohit Sharma</a> 
-                    </td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="https://www.espncricinfo.com/india/content/player/422108.html" target="_blank">Rohul</a>
-                    </td>
-                    <td>101</td>
-                    <td>20</td>
-                    <td>20</td>
-                    <td>47</td>
-                    <td>67</td>
-                    <td>7</td>
-                    <td>7</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>
-                        Virat
-                    </td>
-                    <td>101</td>
-                    <td>20</td>
-                    <td>20</td>
-                    <td>47</td>
-                    <td>67</td>
-                    <td>7</td>
-                    <td>7</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>
-                        Dhoni
-                    </td>
-                    <td>101</td>
-                    <td>20</td>
-                    <td>20</td>
-                    <td>47</td>
-                    <td>67</td>
-                    <td>7</td>
-                    <td>7</td>
-                    <td>7</td>
-                </tr>
-            </tbody>
-        </table>
-    </body>
+    <ol class="green">
+        <li>
+            Apples
+            <ol>
+                <li>
+                    Gala Apples
+                </li>
+                <li>
+                    Red Apples
+                    <ol>
+                        <li>Sample 1</li>
+                        <li>Sample 2</li>
+                        <li>Sample 3</li>
+                        <li>Sample 4</li>
+                    </ol>
+                </li>
+                <li>
+                    Pink Apples
+                </li>
+                <li>
+                    Green Apples
+                </li>
+                <li>
+                    Golden Apples
+                </li>
+            </ol>
+        </li>
+        <li>
+            Grapes
+        </li>
+        <li>
+            Mangos
+        </li>
+        <li>
+            Oranges
+        </li>
+        <li>
+            Bananas
+        </li>
+        <li>
+            Pineapple
+        </li>
+    </ol>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="border: 1px solid black;">Player Name</th>
+                <th style="border: 1px solid black;">Total Score</th>
+                <th style="border: 1px solid black;">Run Rate</th>
+                <th style="border: 1px solid black;">1's</th>
+                <th style="border: 1px solid black;">2's</th>
+                <th style="border: 1px solid black;">3's</th>
+                <th style="border: 1px solid black;">4's</th>
+                <th style="border: 1px solid black;">6's</th>
+                <th style="border: 1px solid black;">Dot's</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <a href="https://www.espncricinfo.com/india/content/player/34102.html" target="_blank">Rohit
+                        Sharma</a>
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://www.espncricinfo.com/india/content/player/422108.html" target="_blank">Rohul</a>
+                </td>
+                <td>101</td>
+                <td>20</td>
+                <td>20</td>
+                <td>47</td>
+                <td>67</td>
+                <td>7</td>
+                <td>7</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>
+                    Virat
+                </td>
+                <td>101</td>
+                <td>20</td>
+                <td>20</td>
+                <td>47</td>
+                <td>67</td>
+                <td>7</td>
+                <td>7</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>
+                    Dhoni
+                </td>
+                <td>101</td>
+                <td>20</td>
+                <td>20</td>
+                <td>47</td>
+                <td>67</td>
+                <td>7</td>
+                <td>7</td>
+                <td>7</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
 </html>

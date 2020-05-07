@@ -1,0 +1,40 @@
+table, table td{
+    border: 1px solid #000000;
+}
+p {
+    margin: 20px;
+    border: 2px double black;
+    border-width: 5px 2px;
+    padding: 10px;
+}
+
+p.green, p.green {
+    background-color: green !important;
+}
+
+p.gray {
+    background-color: gray;
+}
+
+.red{
+    color: red;
+}
+
+h1#page-heading {
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+input {
+   margin: 10px 20px;
+    padding-left: 5px
+}
+.btn {
+    padding: 5px;
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin:0 -2px;
+}
