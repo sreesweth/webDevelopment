@@ -1,0 +1,24 @@
+.pageBackGround {
+    background-color: #b9ffff;
+}
+
+.centered {
+    text-align: center;
+}
+
+table {
+    border: 3px solid #000000; 
+    margin-left:auto; 
+    margin-right:auto; 
+}
+table td {
+    border: 1px solid #000000; 
+}
+
+table td.imageCell {
+    width:120px;
+}
+table td.linkCell {
+    width:30px;
+}
+
