@@ -1,7 +1,23 @@
 .pagebackground {
     background-color: #2224A2;
+    text-align: center;
 }
 
 .textalignment {
     text-align: center;
 }
+
+img {
+    align-items: center;
+}
+input {
+    text-align: center;
+    text-decoration-color: black;
+    color:white;
+    background-color: #2224A2;
+    border: 1px solid black;
+    margin: 0 -2px;
+    
+}
+
+
