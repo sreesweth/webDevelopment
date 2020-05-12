@@ -1,0 +1,43 @@
+<!-- --question2-- -->
+<html>
+    <body style="background-color: aqua;">
+        <header style="text-align: center;">
+            <h1>Parenting E-Book Collection</h1>
+            <h2><i>Select One Today !</i></h2>
+         </header>
+         <table border="1" align="center">
+             <thead >
+                 <tbody>
+                     <td>
+                         <img src="../e-books/parenting/expect.jpg">
+                         <td>
+                             <a>What to expect</a>
+                             <td>
+                                 <img src="../e-books/parenting/expect1.jpg">
+                                 <td>
+                                     <a>The First Year</a>
+                                 </td>
+                             </td>
+                         </td>
+                     </td>
+                     <tr>
+                         <td>
+                             <img src="../e-books/parenting/Mama.jpg">
+                             <td>
+                                 <a>Hands Free Mama</a>
+                                 <td>
+                                     <img src="../e-books/parenting/talk.jpg">
+                                     <td>
+                                         <a>Talk To Kids</a>
+                                     </td>
+                                 </td>
+                             </td>
+                         </td>
+                     </tr>
+                 </tbody>
+
+             </thead>
+         </table>
+        
+    </body>
+</html>
