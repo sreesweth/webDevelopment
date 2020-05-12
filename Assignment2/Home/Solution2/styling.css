@@ -20,5 +20,8 @@ input {
     font-size: 11px;
     padding: 5px;
 }
-
-
+p{
+    text-align: center;
+    background-color: #cccccc;
+    border: 1px solid black;
+}
