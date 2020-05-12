@@ -7,17 +7,18 @@
     text-align: center;
 }
 
-img {
-    border: 2px solid black;
+table {
+    border: 1px solid #000000;
+    margin:40px;
+    align-items: center;
 }
 input {
     text-align: center;
-    text-decoration-color: black;
     color:white;
     background-color: #2224A2;
     border: 1px solid black;
-    margin: 0 -2px;
-    
+    font-size: 11px;
+    padding: 5px;
 }
 
 
