@@ -1,0 +1,29 @@
+.pageBackground{
+    background-color:#2224A2;
+}
+
+
+.headerstyle{
+    font-style: Script MT Bold;
+}
+
+table{
+    border: 3px black;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+table td{
+    border: 1px solid black;
+}
+
+
+table td.imageCell {
+    width: 120px;
+}
+
+table td.linkCell {
+    width:30px;
+}
+
