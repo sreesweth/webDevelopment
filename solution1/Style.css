@@ -24,3 +24,11 @@ table td .image {
 table td .linkcell {
     width: 35px;
 }
+
+.row {
+    width: 100%;
+}
+
+.m-15{
+    margin: 15px;
+}
