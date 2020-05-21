@@ -23,7 +23,23 @@ table td.imageCell {
     width: 120px;
 }
 
+
 table td.linkCell {
-    width:30px;
+    width:30px
 }
 
+.center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16;
+    font-size: 18px;
+}
