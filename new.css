@@ -1,0 +1,72 @@
+
+
+.backgroundcolor {
+    background-color: royalblue;
+}
+.topnavbar li{
+    display: inline-block;
+    
+}
+.topnavbar ul li a {
+border: 2px solid black;
+width: fit-content;
+text-decoration-color: black;
+color:black; 
+}    
+
+.bordering {
+    border-image-width: auto;
+    border-image-outset: 10px;
+}
+.secondbordering div{
+    width: 650px;
+    border: 1px solid black;
+  }
+ #leftsideimg {
+     height: 200px;
+     width:50%
+ }
+ #colmd8 {
+    padding-left: 10rem;
+    border:2px solid;
+    width: 400px;
+    padding: 10px;  
+    
+    
+ }
+ #colmd2
+ {
+
+    border: 2px solid;
+    max-width: 33%;
+    padding-bottom:28px;
+        /* max-height: 100%;
+        display: block; */
+    /* padding: 10%; */
+ }
+
+ #imageid12{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 13px;
+    padding: 0;
+ }
+ #imageid3{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 13px;
+    padding: 0;
+ }
+ #imgsize10 {
+     width: 200px;
+     padding-bottom:1;
+ }
+ #rightside1 {
+     border: 2px solid;
+ }
+ #buttoncolor button {
+     background-color: blue;
+     border: black;
+ }
+   
+
