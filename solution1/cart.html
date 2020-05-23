@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>My Cart</title>
+
+    </head>
+    <body style="text-align: center;">
+        <h1>My Cart</h1>
+        <div id="my-cart" style="width: 100%; margin: auto;">
+            <table style="margin:auto">
+                <thead>
+                    <tr>
+                        <th>
+                            Item No.
+                        </th>
+                        <th>
+                            Title
+                        </th>
+                        <th>
+                            Unit Price
+                        </th>
+                        <th>
+                            Quantity
+                        </th>
+                        <th>
+                            Total Price
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+
+                </tbody>
+            </table>
+        </div>
+        <script>
+            var myCartList = localStorage.getItem('myCartList');
+            if(myCartList) {
+                myCartList = JSON.parse(myCartList);
+                var tableBody = '';
+                for (let index = 0; index < myCartList.length; index++) {
+                   var myItem = myCartList[index];
+                    tableBody = tableBody + '<tr>';
+                    tableBody = tableBody + '<td>' + (index+1) + '</td>';
+                    tableBody = tableBody + '<td>' + myItem.itemName + '</td>';
+                    tableBody = tableBody + '<td>' + myItem.price + '</td>';
+                    tableBody = tableBody + '<td>' + myItem.quantity + '</td>';
+                    tableBody = tableBody + '<td>' + totalPriceBuilder(myItem.price, myItem.quantity) + '</td>';
+                    tableBody = tableBody + '</tr>';
+                }
+                var table = document.getElementById('table-body');
+                table.innerHTML = tableBody;
+                console.log(tableBody);
+            }
+            function totalPriceBuilder(price, quantity) {
+                var myPrice = parseFloat(price);
+                var totalPrice = myPrice * quantity;
+                return totalPrice.toFixed(2);
+            }
+        </script>
+    </body>
+</html>
