@@ -3,7 +3,8 @@
         <title>Exercise Cure</title>
         <script>
             function onAddToCart() {
-                alert("Add ExerciseCure To Cart")
+                alert("Add ExerciseCure To Cart"),
+                console.log(document.getElementById("quantityinput").valueAsNumber)
             }
         </script>
     </head>
@@ -11,7 +12,7 @@
         <header>
             <h1>The Exercise Cure</h1>
             <img src="../e-books/health/NoExercise.jpg">
-            <h3 style="color: brown;"><i>All Doctor's All Natural Solution to Better Health and a Longer Life</i></h3>
+            <h3 style="color: red;"><i>All Doctor's All Natural Solution to Better Health and a Longer Life</i></h3>
             <p>Price : $1.99</p>
             <p>Quantity <input type="number" id="quantityinput"></p>
             <button onclick="onAddToCart()" style="background-color: yellow;">Add To Cart</button>
