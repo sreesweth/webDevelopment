@@ -1,0 +1,30 @@
+.pagebackground {
+    background-color: #b9ffff;
+    text-align: center;
+}
+
+.table {
+    border: 1px solid red; 
+    margin-left:auto; 
+    margin-right:auto; 
+
+}
+.table td {
+    border: 1px solid black;
+}
+
+table td .image {
+    width: 120px;
+}
+
+table td .linkcell {
+    width: 35px;
+}
+
+.row {
+    width: 100%;
+}
+
+.m-15{
+    margin: 15px;
+}
