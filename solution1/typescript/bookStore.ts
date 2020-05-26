@@ -1,4 +1,18 @@
-import { Book } from './books';
+import { Book, BookTypeEnum, BookCatergory } from './books';
+import { Phone } from './books';
+
+    
+    let myPhone = new Phone(568956, 'cord Less' );
+    myPhone.isDailTone = true;
+    myPhone.makeACall(457895);
+    console.log(myPhone.number);
+    let myresult: number = myPhone.addTwoNumber(86, 1547);
+   
+
+    let myMomsPhone = new Phone(568956);
+    myMomsPhone.isDailTone = false;
+
+
 
 
     let listOfBooks: Array<Book> = [
