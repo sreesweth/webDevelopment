@@ -1,7 +1,7 @@
 export class Book {
     itemId: number;
     title: string;
-    discription: string;
+    discription?: string;
     price: number;
     isAvailable: boolean;
     imageLink: string;
@@ -66,4 +66,22 @@ export enum BookTypeEnum {
     Parenting= 'paranting',
     Finance = 'finance',
     Programming = 'programming'
+}
+
+export enum Tempratures {
+     freezingTemp,
+     boilingTemp = 100,
+     roomtemp= 27,
+     hotTemp = 40
+
+}
+
+export enum DaysInAWeek { //Number (Int)
+    Monday, //0
+    Tuesday,
+    Wednsday,
+    Thursday,
+    Friday = 10,
+    Saturday,
+    Sunday
 }

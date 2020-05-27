@@ -1,5 +1,5 @@
 import { Book, BookTypeEnum, BookCatergory } from './books';
-import { Phone } from './books';
+import { Phone, Tempratures } from './books';
 
     
     let myPhone = new Phone(568956, 'cord Less' );
@@ -7,13 +7,24 @@ import { Phone } from './books';
     myPhone.makeACall(457895);
     console.log(myPhone.number);
     let myresult: number = myPhone.addTwoNumber(86, 1547);
-   
 
+   
+    let myName = 'Sree';
+    
+   let myTemp =  Tempratures.freezingTemp //0
+    let myBook: Book = {
+        bookLink: 'hfksdh',
+        discription: 'dsahjljdlsa',
+        imageLink: 'jlf',
+        isAvailable: true,
+        itemId:64,
+        price: 56,
+        title: 'sgsgdfg'
+    };
+
+   
     let myMomsPhone = new Phone(568956);
     myMomsPhone.isDailTone = false;
-
-
-
 
     let listOfBooks: Array<Book> = [
         {
@@ -58,7 +69,7 @@ import { Phone } from './books';
    function createBooksTable() {
         let booksTable = ``;
         
-        listOfBooks.forEach(function(book, i){
+        listOfBooks.forEach((book, i) => {
 
             if(i === 0 || ( i % 2) === 0 ) { //= and == and === /strict
                 booksTable = booksTable + '<tr>'
@@ -75,6 +86,8 @@ import { Phone } from './books';
         let element = document.getElementById('healthTable')
         element.innerHTML = booksTable;
     }
+    
+ //-Node Pakage Manager  Library of pakages - Bootstrap, Jquery, Angular, React
     
     createBooksTable();
 
