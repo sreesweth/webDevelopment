@@ -3,20 +3,24 @@ import { NgModule } from '@angular/core'; // Decorative
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SampleComponent } from './components/sample/sample.component';
 import { HeaderComponent } from './components/header/header.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { HomeModule } from './modules/home/home.module';
+import { BooksModule } from './modules/books/books.module';
 
 
 @NgModule(
   {
   declarations: [
     AppComponent,
-    SampleComponent,
-    HeaderComponent
+    HeaderComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HomeModule,
+    BooksModule
   ],
   providers: [],
   bootstrap: [AppComponent]
