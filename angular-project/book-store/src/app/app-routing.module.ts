@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './modules/home/components/home/home.component';
-import { MainBooksComponent } from './modules/books/components/main-books/main-books.component';
-import { DetailBookComponent } from './modules/books/components/detail-book/detail-book.component';
 
 
 const routes: Routes = [
@@ -17,16 +15,7 @@ const routes: Routes = [
   },
   {
     path: 'books',
-    component: MainBooksComponent
-  },
-  {
-    path: 'books/:id',
-    component: DetailBookComponent
-  },
-  {
-    path: '**',
-    pathMatch: 'full',
-    redirectTo: '/home'
+    loadChildren: () => import('./modules/books/books.module').then(m => m.BooksModule)
   }
 ];
 

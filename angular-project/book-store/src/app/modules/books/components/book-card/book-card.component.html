@@ -1,0 +1,14 @@
+<div class="card" style="width: 18rem;">
+    <img [src]="databook.imageLink" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{databook.title}}</h5>
+      <p class="card-text">{{databook.description}}</p>
+      <p>
+          {{databook.price}}
+      </p>
+      <p>
+        <input type="number" [(ngModel)]="noOfItems">
+      </p>
+      <button class="btn btn-primary" (click)="addToCart()">Add To Cart</button>
+    </div>
+  </div>

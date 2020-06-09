@@ -8,6 +8,7 @@ export class Book {
     imageLink: string;
     bookLink: string;
     catagory: CategoryEnum;
+    noOfBooks?: number;
 }
 
 export enum CategoryEnum {
@@ -23,7 +24,7 @@ export const listOfBooks: Array<Book> = [
         title: 'Daniel Plan',
         description: 'The Tried and Tested Dietary Plan to Change Your Life.',
         price: 2.99,
-        imageLink: './images/health/HealthPlan.jpg',
+        imageLink: './assets/images/health/healthPlan.jpg',
         isAvailable: true,
         bookLink: './daniel-plan.html',
         catagory: CategoryEnum.Health
@@ -33,7 +34,7 @@ export const listOfBooks: Array<Book> = [
         title: 'Soul Healing',
         description: 'A Guide to a Happy and Healthy Life by Basic Lifestyle Changes.',
         price: 1.99,
-        imageLink: './images/health/Soul.jpg',
+        imageLink: './assets/images/health/Soul.jpg',
         isAvailable: true,
         bookLink: 'soul-healing.html',
         catagory: CategoryEnum.Health
@@ -43,7 +44,7 @@ export const listOfBooks: Array<Book> = [
         title: 'Wheat Belly',
         description: 'Wheat – The Real Wonder Food for the 21st Century.',
         price: 0.99,
-        imageLink: './images/health/WheatBelly.jpg',
+        imageLink: './assets/images/health/WheatBelly.jpg',
         isAvailable: true,
         bookLink: './wheatBelly.html',
         catagory: CategoryEnum.Health
@@ -53,7 +54,7 @@ export const listOfBooks: Array<Book> = [
         title: 'Exercise Cure',
         description: "A Doctor's All natural Solution to Better Health and a Longer Life",
         price: 0.99,
-        imageLink: './images/health/Noexercise.jpg',
+        imageLink: './assets/images/health/Noexercise.jpg',
         isAvailable: true,
         bookLink: './the-exercise-cure.html',
         catagory: CategoryEnum.Health
@@ -63,7 +64,7 @@ export const listOfBooks: Array<Book> = [
         title: 'What To Expect',
         description: "A Health and Exercise Guide for Expecting Mothers ",
         price: 3.99,
-        imageLink: './images/health/expect.jpg',
+        imageLink: './assets/images/parenting/expect.jpg',
         isAvailable: true,
         bookLink: './the-exercise-cure.html',
         catagory: CategoryEnum.Parenting
@@ -73,7 +74,7 @@ export const listOfBooks: Array<Book> = [
         title: 'The First Year',
         description: "Become a Multi-Tasking Mama with Less Stress",
         price: 1.99,
-        imageLink: './images/health/expect1.jpg',
+        imageLink: './assets/images/parenting/expect1.jpg',
         isAvailable: true,
         bookLink: './the-exercise-cure.html',
         catagory: CategoryEnum.Parenting
@@ -83,7 +84,7 @@ export const listOfBooks: Array<Book> = [
         title: 'Hands Free Mama',
         description: "Become a Multi-Tasking Mama with Less Stress ",
         price: 0.99,
-        imageLink: './images/health/Mama.jpg',
+        imageLink: './assets/images/parenting/Mama.jpg',
         isAvailable: false,
         bookLink: './the-exercise-cure.html',
         catagory: CategoryEnum.Parenting
@@ -93,9 +94,9 @@ export const listOfBooks: Array<Book> = [
         title: 'Talk to Kids',
         description: "A Guide to Communicating with Your Children",
         price: 2.99,
-        imageLink: './images/health/talk.jpg',
+        imageLink: './assets/images/parenting/talk.jpg',
         isAvailable: true,
-        bookLink: './the-exercise-cure.html',
+        bookLink: '../../../../../assets/the-exercise-cure.html',
         catagory: CategoryEnum.Parenting
     }
 ];

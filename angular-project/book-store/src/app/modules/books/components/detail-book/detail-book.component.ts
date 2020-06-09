@@ -15,6 +15,7 @@ export class DetailBookComponent implements OnInit {
 
 category: CategoryEnum;
 bookList: Array<Book> = [];
+noOfBooks: number;
 
   constructor(
     private activeRoute: ActivatedRoute,
@@ -24,13 +25,21 @@ bookList: Array<Book> = [];
 
   ngOnInit(): void {
     this.activeRoute.params.subscribe(x => {
-      this.category = x['id'];
+      this.category = x.category;
       if (this.category) {
          this.bookService.getBooksByCategory(this.category).subscribe(response => {
           this.bookList = response;
          });
       }
     });
+  }
+
+  addToCart(selectedBook: Book) {
+    console.log('selected Book:', selectedBook);
+  }
+
+  calculateTotalValue(book: Book) {
+    return `$${(book.price * book.noOfBooks).toFixed(2)}`;
   }
 
 }
