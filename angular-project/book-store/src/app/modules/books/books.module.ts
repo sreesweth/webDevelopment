@@ -6,12 +6,14 @@ import { BookService } from './services/book.service';
 import { BooksRoutingModule } from './books-routing.module';
 import { FormsModule } from '@angular/forms';
 import { BookCardComponent } from './components/book-card/book-card.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
     MainBooksComponent,
     DetailBookComponent,
-    BookCardComponent
+    BookCardComponent,
+    CartComponent
   ],
   imports: [
     CommonModule,

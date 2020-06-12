@@ -1,0 +1,48 @@
+<div>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>
+                    Item
+                </th>
+                <th>
+                    Image
+                </th>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Price
+                </th>
+                <th>
+                    Qantity
+                </th>
+                <th>
+                    Total Cost
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of itemsInCart; let i = index">
+                <td>
+                    {{i+1}}
+                </td>
+                <td>
+                    <img [src]="item.imageLink">
+                </td>
+                <td>
+                    {{item.title}}
+                </td>
+                <td>
+                    {{item.price}}
+                </td>
+                <td>
+                    {{item.noOfBooks}}
+                </td>
+                <td>
+                    {{calculateTotalValue(item)}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

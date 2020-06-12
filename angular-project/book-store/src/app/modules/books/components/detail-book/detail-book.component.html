@@ -1,8 +1,12 @@
 <p>detail-book works!</p>
 <h1>You are in {{category}}</h1>
+<button class="btn btn-danger"  [routerLink]="['/books/cart']">GO TO CART</button>
 
-<div class="bg-info m-3 p-3" *ngFor="let book of bookList">
-    <app-book-card [databook]="book"></app-book-card>
+<div class="bg-info m-3 p-3" *ngFor="let book of bookList;">
+    <app-book-card 
+        [databook]="book" 
+        [price]="book.price"
+        (clickCard)="onAddToCart($event)"></app-book-card>
 </div>
 
 

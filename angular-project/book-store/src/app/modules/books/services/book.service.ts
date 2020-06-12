@@ -7,7 +7,10 @@ import { Observable } from 'rxjs';
 })
 export class BookService {
 
+
   constructor() { }
+
+  booksInCart: Book[] = [];
 
   getBooksByCategory(selectedCategory: CategoryEnum): Observable<Book[]> {
 
@@ -16,6 +19,15 @@ export class BookService {
       observer.next(catBooks);
       observer.complete();
     });
+  }
+
+  addBookToCart( quantity: number, selectedBook: Book) {
+    selectedBook.noOfBooks = quantity;
+    this.booksInCart.push(selectedBook);
+  }
+
+  resetObservable() {
+    this.getBooksByCategory(CategoryEnum.Health).subscribe();
   }
 
   getBooks() {
