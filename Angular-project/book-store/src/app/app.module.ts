@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from '../app/header/header.component';
 import { NavigationComponent } from '../app/navigation/navigation.component';
 import { HomeModule } from './Modules/home/home.module';
+import {  BooksModule } from './Modules/books/books.module';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavigationComponent
+    NavigationComponent,
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    BooksModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
