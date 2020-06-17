@@ -1,7 +1,9 @@
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent} from './Modules/home/home.component';
-import { MainBooksComponent } from './Modules/books/components/main-books/main-books.component'
+import { MainBooksComponent } from './Modules/books/components/main-books/main-books.component';
+import { DetailBookComponent } from './Modules/books/components/detail-book/detail-book.component'
+
 
 
 const routes: Routes = [
@@ -20,8 +22,12 @@ const routes: Routes = [
     redirectTo: 'home'
   },
   {
-    path: 'products',
+    path: 'books',
     component: MainBooksComponent
+  },
+  {
+    path: 'books/:categories',
+    component: DetailBookComponent
   }
 ];
 
