@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute,Router } from '@angular/router';
 
 @Component({
   selector: 'app-detail-book',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailBookComponent implements OnInit {
 
-  constructor() { }
+categories:string;
+
+  constructor(private ActiveRoute: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
+    this.ActiveRoute.params.subscribe(x=> {
+      this.categories=x['categories'];
+    })
   }
+
 
 }
