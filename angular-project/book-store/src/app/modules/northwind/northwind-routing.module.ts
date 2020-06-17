@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { NorthwindLayoutComponent } from './components/northwind-layout/northwind-layout.component';
 import { CustomersComponent } from './components/customers/customers.component';
 import { CustomerDetailsComponent } from './components/customer-details/customer-details.component'; 
-
+import { CustomerEditComponent } from './components/customer-edit/customer-edit.component';
 
 const routes: Routes = [
     {
@@ -17,6 +17,10 @@ const routes: Routes = [
             {
                 path: 'customer/details/:id',
                 component: CustomerDetailsComponent
+            },
+            {
+                path: 'customer/edit/:custId',
+                component: CustomerEditComponent
             },
             {
                 path: '',

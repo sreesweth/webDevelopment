@@ -1,3 +1,16 @@
-<p>customer-details works!</p>
-<h1>{{customerInfo.id}}</h1>
-<h2>{{customerInfo.companyName}}</h2>
+<div class="card">
+    <h5 class="card-header">{{customerInfo.companyName}}</h5>
+    <div class="card-body">
+      <h5 class="card-title">{{customerInfo.contactName}}</h5>
+      <p>({{customerInfo.contactTitle}})</p>
+      <div class="card-text">
+          <p>{{customerInfo.address.street}}</p>
+          <p>{{customerInfo.address.city}}</p>
+          <p>{{customerInfo.address.country}}</p>
+          <p>{{customerInfo.address.postalCode}}</p>
+          <p>{{customerInfo.address.region}}</p>
+          <p>{{customerInfo.address.phone}}</p>
+        </div>
+      <a [routerLink]="['/northwind/customer/edit', customerInfo.id]" class="btn btn-primary">Edit</a>
+    </div>
+  </div>

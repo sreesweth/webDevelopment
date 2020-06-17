@@ -49,4 +49,8 @@ export class NorthWindDataService {
     }));
   }
 
+  updateCustomerInfo(customerInfo: Customer): Observable<any> {
+    return this.http.put(`${environment.apiUrl}/customers`, customerInfo);
+  }
+
 }

@@ -1,0 +1,64 @@
+<div class="card">
+    <h5 class="card-header">{{customerInfo?.companyName}}</h5>
+    <div class="card-body">
+
+        <form [formGroup]="customerFormGroup">
+            <div class="form-group">
+                <label for="companyName">Company Name</label>
+                <input formControlName="companyName" type="text" class="form-control" id="companyName" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="contactName">Contact Name</label>
+                <input formControlName="contactName" type="text" class="form-control" id="contactName" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="contactTitle">Contact Title</label>
+                <input formControlName="contactTitle" type="text" class="form-control" id="contactTitle" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="street">Street</label>
+                <input formControlName="street" type="text" class="form-control" id="street" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input formControlName="city"  type="text" class="form-control" id="city" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input formControlName="country" type="text" class="form-control" id="country" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input formControlName="phone" type="text" class="form-control" id="phone" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="region">Region</label>
+                <input formControlName="region" type="text" class="form-control" id="region" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="postalCode">PostalCode</label>
+                <input formControlName="postalCode" type="text" class="form-control" id="postalCode" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <button (click)="submitData()" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
