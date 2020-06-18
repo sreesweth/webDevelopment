@@ -4,6 +4,8 @@ import { NorthwindLayoutComponent } from './components/northwind-layout/northwin
 import { CustomersComponent } from './components/customers/customers.component';
 import { CustomerDetailsComponent } from './components/customer-details/customer-details.component'; 
 import { CustomerEditComponent } from './components/customer-edit/customer-edit.component';
+import { CustomerResolve } from './services/customer-dataresolver.service';
+import { CustomerDetailsResolve } from './services/customer-details-dataresolver.service';
 
 const routes: Routes = [
     {
@@ -12,14 +14,27 @@ const routes: Routes = [
         children: [
             {
                 path: 'customer',
-                component: CustomersComponent
+                component: CustomersComponent,
+                resolve: {
+                    customer: CustomerResolve
+                }
             },
             {
                 path: 'customer/details/:id',
-                component: CustomerDetailsComponent
+                component: CustomerDetailsComponent, 
+                resolve: {
+                    customer: CustomerDetailsResolve
+                }
             },
             {
-                path: 'customer/edit/:custId',
+                path: 'customer/edit/:id',
+                component: CustomerEditComponent,
+                resolve: {
+                    customer: CustomerDetailsResolve
+                }
+            },
+            {
+                path: 'customer/create',
                 component: CustomerEditComponent
             },
             {

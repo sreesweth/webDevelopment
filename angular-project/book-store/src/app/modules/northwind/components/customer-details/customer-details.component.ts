@@ -18,14 +18,15 @@ export class CustomerDetailsComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.activeRoute.params.subscribe(params => {
-      this.customerId = params.id;
-      if (this.customerId) {
-        this.dataService.getCustomerByID(this.customerId).subscribe(res => {
-          this.customerInfo = res;
-        });
-      }
-    });
+    this.customerInfo = this.activeRoute.snapshot.data['customer'];
+    // this.activeRoute.params.subscribe(params => {
+    //   this.customerId = params.id;
+    //   if (this.customerId) {
+    //     this.dataService.getCustomerByID(this.customerId).subscribe(res => {
+    //       this.customerInfo = res;
+    //     });
+    //   }
+    // });
   }
 
 }

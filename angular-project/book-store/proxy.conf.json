@@ -1,0 +1,7 @@
+{
+    "/api": {
+      "target": "https://northwind.now.sh",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }

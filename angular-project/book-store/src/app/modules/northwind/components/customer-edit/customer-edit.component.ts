@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router} from '@angular/router';
 import { Customer } from 'src/app/models/customer.model';
 import { NorthWindDataService } from '../../services/north-wind-data.service';
-import { FormBuilder, FormGroup, FormControl, Validator } from '@angular/forms';
+import { FormBuilder, FormGroup, FormControl, Validator, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-customer-edit',
@@ -22,21 +22,21 @@ export class CustomerEditComponent implements OnInit {
     private dataService: NorthWindDataService
     ) {
       this.customerFormGroup = this.fb.group({
-        'contactTitle': '',
-        'contactName': '',
-        'companyName': '',
-        'street': '',
-        'city': '',
-        'country': '',
-        'phone': '',
+        'contactTitle': ['', Validators.required],
+        'contactName': ['', Validators.required],
+        'companyName': ['', Validators.required],
+        'street': ['', Validators.required],
+        'city': ['', Validators.required],
+        'country': ['', Validators.required],
+        'phone': ['', Validators.required],
         'region': '',
-        'postalCode': ''
+        'postalCode': ['', Validators.required]
       });
      }
 
   ngOnInit(): void {
     this.activeRoute.params.subscribe(params => {
-      this.customerId = params.custId;
+      this.customerId = params.id;
       if (this.customerId ) {
         this.dataService.getCustomerByID(this.customerId).subscribe(customer => {
           this.customerInfo = customer;
@@ -57,24 +57,28 @@ export class CustomerEditComponent implements OnInit {
   }
 
   submitData() {
-    const cust = this.customerFormGroup.getRawValue();
-    this.dataService.updateCustomerInfo({
-      address: {
-        city: cust.city,
-        country: cust.country,
-        phone: cust.phone,
-        postalCode: cust.postalCode,
-        region: cust.region,
-        street: cust.street
-      },
-      companyName: cust.companyName,
-      contactName: cust.contactName,
-      contactTitle: cust.contactTitle,
-      id: this.customerId
-    }).subscribe(res => {
-      console.log(res);
-    });
+    this.customerFormGroup.markAllAsTouched();
+    if (this.customerFormGroup.valid) {
+      const cust = this.customerFormGroup.getRawValue();
 
+      this.dataService.updateCustomerInfo({
+        address: {
+          city: cust.city,
+          country: cust.country,
+          phone: cust.phone,
+          postalCode: cust.postalCode,
+          region: cust.region,
+          street: cust.street
+        },
+        companyName: cust.companyName,
+        contactName: cust.contactName,
+        contactTitle: cust.contactTitle,
+        id: this.customerId
+      }).subscribe(res => {
+        console.log(res);
+      });
+    } else {
+      alert('Form is not valid, please review form.');
+    }
   }
-
 }

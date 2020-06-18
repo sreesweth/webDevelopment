@@ -13,7 +13,7 @@ export class NorthWindDataService {
   constructor(private http: HttpClient) { }
 
   getAllCustomers(): Observable<Customer[]> {
-    return this.http.get(environment.apiUrl + '/customers')
+    return this.http.get('/api/customers')
     .pipe(
       map((res: []) => {
         let customerList:Customer[] = [];
@@ -35,7 +35,7 @@ export class NorthWindDataService {
 
   getCustomerByID(custId: string): Observable<Customer> { 
     //nortwind.sh.net/api/customers/BOAP
-    return this.http.get( `${environment.apiUrl}/customers/${custId}`)
+    return this.http.get( `/api/customers/${custId}`)
     .pipe(
       map( customer => {
         const cust: Customer = {
@@ -50,7 +50,7 @@ export class NorthWindDataService {
   }
 
   updateCustomerInfo(customerInfo: Customer): Observable<any> {
-    return this.http.put(`${environment.apiUrl}/customers`, customerInfo);
+    return this.http.put(`/api/customers/${customerInfo.id}`, customerInfo);
   }
 
 }

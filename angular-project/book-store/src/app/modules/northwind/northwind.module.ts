@@ -8,7 +8,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NorthWindDataService } from './services/north-wind-data.service';
 import { CustomerDetailsComponent } from './components/customer-details/customer-details.component';
 import { CustomerEditComponent } from './components/customer-edit/customer-edit.component';
-
+import { CustomerResolve } from './services/customer-dataresolver.service';
+import { CustomerDetailsResolve } from './services/customer-details-dataresolver.service';
 
 
 @NgModule({
@@ -21,7 +22,9 @@ import { CustomerEditComponent } from './components/customer-edit/customer-edit.
     FormsModule
   ],
   providers: [
-    NorthWindDataService
+    NorthWindDataService,
+    CustomerResolve,
+    CustomerDetailsResolve
   ]
 })
 export class NorthwindModule { }
