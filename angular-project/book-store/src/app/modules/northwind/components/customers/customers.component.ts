@@ -11,6 +11,7 @@ import { Customer } from 'src/app/models/customer.model';
 export class CustomersComponent implements OnInit {
 
   customerList: Customer[] = [];
+  filterValue: string;
 
   constructor(
     private activeRoute: ActivatedRoute,

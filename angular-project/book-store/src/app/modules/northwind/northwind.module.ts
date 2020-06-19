@@ -10,10 +10,11 @@ import { CustomerDetailsComponent } from './components/customer-details/customer
 import { CustomerEditComponent } from './components/customer-edit/customer-edit.component';
 import { CustomerResolve } from './services/customer-dataresolver.service';
 import { CustomerDetailsResolve } from './services/customer-details-dataresolver.service';
+import { CustomerFilterPipe } from './pipes/customer-filter.pipe';
 
 
 @NgModule({
-  declarations: [NorthwindLayoutComponent, CustomersComponent, CustomerDetailsComponent, CustomerEditComponent],
+  declarations: [NorthwindLayoutComponent, CustomersComponent, CustomerDetailsComponent, CustomerEditComponent, CustomerFilterPipe],
   imports: [
     CommonModule,
     HttpClientModule,

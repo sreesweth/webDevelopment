@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './modules/home/components/home/home.component';
-
+import { AuthGuardService } from './guards/auth-guard.service';
 
 const routes: Routes = [
   {
@@ -19,7 +19,8 @@ const routes: Routes = [
   },
   {
     path: 'northwind',
-    loadChildren: () => import('./modules/northwind/northwind.module').then(m => m.NorthwindModule)
+    loadChildren: () => import('./modules/northwind/northwind.module').then(m => m.NorthwindModule),
+    canActivate: [AuthGuardService]
   }
 ];
 

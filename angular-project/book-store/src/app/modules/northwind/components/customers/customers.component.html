@@ -9,7 +9,8 @@
                     ID
                 </th>
                 <th>
-                    Company Name
+                    Company Name 
+                    <input type="text" [(ngModel)]="filterValue">
                 </th>
                 <th>
                     Name
@@ -20,7 +21,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let customer of customerList">
+            <tr *ngFor="let customer of customerList |customerFilter:filterValue">
                 <td>
                     <a [routerLink]="['details', customer.id]"> {{customer.id}} </a>
                 </td>
