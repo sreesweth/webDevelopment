@@ -1,0 +1,18 @@
+<router-outlet></router-outlet>
+<h1 [ngClass]="isGreen ?'green':'red'">{{text}}</h1>
+
+<!-- <ul *ngIf='numbers.length > 0'>
+    <li *ngFor='let number of numbers'>{{number}}</li>
+</ul> -->
+<!-- <p [ngClass]="isTextcolor==true :'text-green':text-red"></p> -->
+<p *ngIf='numbers.length==0'>No Data</p>
+<p [ngClass]="isNumber ?'rednumber':'greennumber'"><li  *ngFor='let number of numbers'>{{number}}</li></p>
+<h1>{{date }}</h1>
+<h1>{{price | currency}}</h1>
+<li *ngFor="let list of names">
+    <!-- <b>{{list.name}}</b> -->
+    <!-- <p *ngIf="name.country=='England'"></p>
+    <p [ngClass]="listofcountry ?'eng'"></p> -->
+    <b>Country:{{list.country}}</b>
+    <b>Name:{{list.name}}</b>
+</li>

@@ -1,0 +1,42 @@
+<html>
+    <title>Js Issue Tracker</title>
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="./trail.js"></script>
+
+<body>
+<form>
+<!-- <h1>JS Issue Tracker</h1> -->
+<div class="container">
+<h1>JS Issue Tracker<h5 style="font: size 10px;">by Praveen Tech.com</h5></h1>
+<div class="jumbotron">
+<h2>Add New issue:</h2>
+<h4>Description</h4>
+<input type="text" for="Description" id="allissues" placeholder="Describe the Isuue...">
+<h4>Severity</h4>
+<select id="actionrate">
+<option value="low">Low</option>
+<option value="Medium">Medium</option>
+<option value="Severe">Severe</option>
+</select>
+<h4>Assigned To:</h4>
+<input type="text" id="Assigned" placeholder="Enter Name.."><br><br>
+<button type="submit" class="btn btn-primary"onclick="fetchissues()">Add</button>
+</div>   
+</div>
+<div class="container">
+<div class="footer">
+<p>&copy Rights owned by Praveen Tech</p>
+</div>
+</div>
+</form>
+</body>
+
+
+
+
+
+
+
+
+</html>

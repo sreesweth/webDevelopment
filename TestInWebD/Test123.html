@@ -3,38 +3,158 @@
     <head>
         <title>Parenting.html</title>
     </head>
-    <body style="background-color: aqua;">
-        <div align='center'>
-            <h1>Parenting E-Book Collection</h1>
-            <h2 style="font-style: italic;">Select one Today !</h2>
-        </div>
-        <table class="ex1" border="1"align='center'>
-             <div>
-          <tr>  
-            <td>
-                <img src="./webDevelopment/e-books/parenting/expect.jpg">
-             </td>
-                <td style="width:10"> What To Expect</td>
-             <td>
-                <img src="./webDevelopment/e-books/parenting/expect1.jpg">
-             </td>
-                <td style="width: 10"> The First year</td>
-          </tr>
-            </div>
+    <script>
 
-            <div>
-             <td>
-                 <img src="./webDevelopment/e-books/parenting/Mama.jpg">
-             </td>
-                 <td style="width: 10"> Hands Free Mama</td>
-              <td>
-                 <img src="./webDevelopment/e-books/parenting/talk.jpg">
-              </td>
-                 <td style="width: 10;">Talk To Kids</td>
-            </tr>
-              </div> 
-            
-        </table>
-        <p align='center'> <a href="E:\Visual studio code\webDevelopment\solution1\store_index.html">Continue Shooping</a></p>
-    </body>
+
+   
+// };
+// console.log(squre(45,5)+'this s');
+// function manytimes(){
+//     console.log('Praveen is an ui developer')
+// }
+// function monkyTrouble(asmile,bsmile){
+//     return (asmile && bsmile)||(!asmile && !bsmile)
+// }
+// console.log('he is in trouble'+monkyTrouble(true,true));
+// console.log('he is not in trouble'+monkyTrouble(true,false));
+// console.log('he is not in trouble'+monkyTrouble(false,true));
+// console.log('he is in trouble'+monkyTrouble(false,false));
+
+// function nnumber(name,times){
+//     let result='';
+//     let count=1
+//     while(count<=times){
+//     result=result+name;
+//     count ++
+// }
+// return result;}
+
+// console.log(nnumber('praveen',2))
+
+// function nnumber(name,times){
+//     var text="";
+//     for(i=0;i<times;i++)
+//     text+=name+'kumar'
+//     return text
+// }
+// console.log(nnumber('naveen',3))
+//  var values=[10,12,14,20,'praveen']
+//  values[0]='teja'
+//  values[15]='raj'
+//  values[14]="@"
+//  values.push('gopal')
+//  values.unshift('karuna')
+//  values.shift()
+// //  console.log(values[0],[1])
+// //  console.log(typeof(values))
+// //  console.log(values)
+//  console.log(values)
+//  console.log(values[17])
+//  console.log(values.length)
+//  console.log(values.indexOf('gopal'))
+// console.log(values.slice(2,3))
+
+// var jagged=[[1,2,3],[4,5,6],[7,8,9]]
+// console.log(jagged[1][1],[0][0])
+// var books=[]
+// input=prompt("Enter the name of action to perform[Add|List|Exit]")
+// while(input!='Exit'){
+//     if(input=='Add'){
+//         var newbook=prompt('enter name of the book to add')
+//         books.push(newbook)
+//     }
+//     else if(input=="List"){
+//         console.log('list of availbale books');
+//         console.log(books);
+//     }
+//     else{
+//         console.log('Choose valid option');
+//     }
+//     input=prompt("Enter the name of action to perform[Add|List|Exit]")
+// }
+// console.log('thanks for using our application')
+
+// var numbers=[10,20,30,40]
+// var i=0
+// while(i<numbers.length){
+//     console.log(numbers[i])
+//     i++
+// }
+
+// var names=['praveen','kumar','teja','rayapati']
+// names.forEach(element => {
+//     console.log(element)
+// });
+// var names=['praveen','kumar','teja','rayapati']
+// console.log(names.pop())
+// console.log(names)
+// names.splice(1,1)
+// console.log(names)
+
+// var varibl='praveen'
+//  name=varibl[0]='B'
+// console.log(varibl)
+// console.log(name)
+
+// var books=[];
+// var input=prompt("Which operstion u want to perform[add|delete|list|exit]:")
+// while(input!="exit"){
+//     if(input=="add"){
+//         addbook();
+//     }
+//     else if(input=="list"){
+//         listofbooks();
+//     }
+//     else if(input=="delete"){
+//         deletebooks();
+//     }
+//     else{
+//         console.log('plase enter correct option')
+//     }
+//     input=prompt("Which operstion u want to perform[add|delete|list|exit]:")
+// }
+// console.log("thanks for using our application")
+
+// function addbook(){
+//     booklist=prompt('enter book name you want to add');
+//     books.push(booklist);
+// }
+// function listofbooks(){
+//     console.log('list of books available here')
+//     for(b of books){
+//         console.log(b)  
+//     }
+    
+// }
+// function deletebooks(){
+//     name=prompt('enter name of book to delete')
+//     index=books.indexOf(name)
+//     if(index==-1){
+//         console.log("the book is not available")
+//     }
+//     else{
+//     books.splice(index,1)
+// console.log("book deleted sucessfully")
+//     }
+// }
+// var number={key1:'praveen',key2:'naveen',key3:'suresh'}
+// for(key in number){
+//     // console.log(number.key1)
+//     console.log(key+''+number[key])
+// }
+var movie={name:'bahubali',hero:'rana',director:'rajamouli',getinfo:function(){
+    console.log(this.director)
+    console.log(this.hero)
+    console.log(this.name)
+}
+}
+var links=document.querySelectorAll('a')
+for(link of links){
+    link.style.background='green';
+    link.style.color='white';
+    link.textContent='Praveen';
+    link.setAttribute('href','https://facebook.com')
+}
+
+    </script>
 </html>

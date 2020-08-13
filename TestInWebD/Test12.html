@@ -1,4 +1,4 @@
-
+<!-- 
 <html>
     <head>
         <title>Parenting.html</title>
@@ -6,13 +6,14 @@
     <body style="background-color: aqua;">
         <div align='center'>
             <h1>Parenting E-Book Collection</h1>
+            
             <h2 style="font-style: italic;">Select one Today !</h2>
         </div>
         <table class="ex1" border="1"align='center'>
              <div>
           <tr>  
             <td>
-                <img src="./webDevelopment/e-books/parenting/expect.jpg">
+                <img src="../e-books/health/healthPlan.jpg">
              </td>
                 <td style="width:10"> What To Expect</td>
              <td>
@@ -36,5 +37,37 @@
             
         </table>
         <p align='center'> <a href="E:\Visual studio code\webDevelopment\solution1\store_index.html">Continue Shooping</a></p>
+    </body>
+</html> -->
+<html>
+    <head>
+    <title>Form Demo</title>
+    <!-- <link rel="stylesheet" href="stylesheet.css"> -->
+
+    </head>
+    <body>
+        <h1>Bank registration form</h1>
+        <form action="result.html">
+            <!-- Enter Name<input type="text" id="Name"placeholder="EnterName" >
+            Password<input type="text" id="pswd" placeholder="password">
+
+            <input type="submit" value="Login"> -->
+         <select name="pmode">
+             <option value="ccard">Credit card</option>
+             <option value="dcard">debitcard</option>
+             <option value="netbank">Net banking</option>
+             <option value="papl">Paypal</option>
+         </select>
+         <!-- <button type="submit">click here</button> -->
+
+         <label for="lang">english</label>
+         <input type="checkbox" value="english" name="langu">
+         <label for="lang">Telugu</label>
+         <input type="checkbox" value="telugu" name="langu"checked>
+         <label for="lang">Tamil</label>
+         <input type="checkbox" value="tamil" name="langu"><br>
+         Enter Your Feedback:<textarea name="feedbak" rows="8"cols='80'></textarea>
+         <button type="submit">click here</button>
+        </form>
     </body>
 </html>
